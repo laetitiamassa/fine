@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Happenings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Action</th>
+      <th>Object</th>
+      <th>Counterpart</th>
+      <th>Deadline</th>
+      <th>Done</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @happenings.each do |happening| %>
+      <tr>
+        <td><%= happening.action %></td>
+        <td><%= happening.object %></td>
+        <td><%= happening.counterpart %></td>
+        <td><%= happening.deadline %></td>
+        <td><%= happening.done %></td>
+        <td><%= link_to 'Show', happening %></td>
+        <td><%= link_to 'Edit', edit_happening_path(happening) %></td>
+        <td><%= link_to 'Destroy', happening, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Happening', new_happening_path %>

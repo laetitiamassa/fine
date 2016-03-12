@@ -26,5 +26,13 @@ module Fine
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    #to get it working with ionic on web server (in dev)
+    config.middleware.insert_before 0, "Rack::Cors" do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :put, :delete, :post, :options]
+      end
+    end
   end
 end

@@ -1,0 +1,15 @@
+<%= simple_form_for(@happening) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :action %>
+    <%= f.input :object %>
+    <%= f.input :counterpart %>
+    <%= f.input :deadline %>
+    <%= f.input :done %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

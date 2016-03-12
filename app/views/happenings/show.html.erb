@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Action:</strong>
+  <%= @happening.action %>
+</p>
+
+<p>
+  <strong>Object:</strong>
+  <%= @happening.object %>
+</p>
+
+<p>
+  <strong>Counterpart:</strong>
+  <%= @happening.counterpart %>
+</p>
+
+<p>
+  <strong>Deadline:</strong>
+  <%= @happening.deadline %>
+</p>
+
+<p>
+  <strong>Done:</strong>
+  <%= @happening.done %>
+</p>
+
+<%= link_to 'Edit', edit_happening_path(@happening) %> |
+<%= link_to 'Back', happenings_path %>

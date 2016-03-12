@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  action: MyString
+  object: MyString
+  counterpart: MyString
+  deadline: 2016-03-12 06:06:21
+  done: false
+
+two:
+  action: MyString
+  object: MyString
+  counterpart: MyString
+  deadline: 2016-03-12 06:06:21
+  done: false
